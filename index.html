@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prvi projekat</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js"></script>
+</head>
+
+<body onload="ucitana_stranica()">
+  <div id="ne_znam" class="plava-slova">Prvi DIV</div>
+  <div id="drugi-div">Drugi DIV</div>
+  <button onclick="obavijesti_me()">Klikni me</button>
+  <button id="btn5" class="plava-slova">I mene</button>
+  <button id="btn2" class="plava-slova">Mijenjam boju</button>
+  <button id="btn3" onclick="brisi()">Brisi</button>
+  <button id="btn4" onclick="pisi()">Pisi</button>
+
+  <!-- novi red -->
+  <br />
+  <canvas id="mojKanvas" width="300" height="300" style="border: 1px solid #000000">
+  </canvas>
+  <!-- novi red -->
+  <br />
+  <button onclick="dodaj_krug()">Dodaj krug</button>
+  <button onclick="pokreni_simulaciju()">Pokreni simulaciju</button>
+  <button onclick="zaustavi_simulaciju()">Zaustavi simulaciju</button>
+
+  <br />
+
+  <canvas id="kanvasGrafikon" width="500" height="300" style="border: 1px solid #000000">
+  </canvas>
+  <!-- novi red -->
+  <br />
+  <button onclick="iscrtaj_e()">Iscrtaj e</button>
+  <br />
+  <canvas id="sudar_krug" width="300" height="300">
+  </canvas>
+  <!-- novi red -->
+  <br />
+  <button onclick="dodaj_krug1()">Dodaj krug</button>
+  <button onclick="pokreni_simulaciju1()">Pokreni simulaciju</button>
+  <button onclick="zaustavi_simulaciju1()">Zaustavi simulaciju</button>
+  <br />
+  <h1 style="text-align: center;">Broj zivota<div id="rezultat" style="text-align: center;"></div>
+  </h1>
+  </br>
+  <div id="centriranje" style="text-align: center;">
+    <canvas id="c" width="500" height="400"></canvas>
+    <button id="lijevo">Lijevo</button>
+    <button id="desno">Desno</button>
+    <!-- <div id="coords">Use arrow keys to move</div> -->
+  </div>
+</body>
+
+</html>
